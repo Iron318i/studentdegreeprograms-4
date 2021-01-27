@@ -42,8 +42,16 @@
     }
 }
 
-@media (max-width: 767px){
+@media (max-width: 900px){
     .arrow-wrp{
 	display: none!important;
+    }
+}
+@media (max-width: 767px){
+    .info-wrp{
+	.col{
+	    flex: 0 0 100%;
+	    max-width: 100%;
+	}
     }
 }
