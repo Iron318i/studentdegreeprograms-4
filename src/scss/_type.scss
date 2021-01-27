@@ -63,7 +63,7 @@ label {
     color: $black;
     background-color: #fff;
     background-clip: padding-box;
-    border: 1px solid #bbbbbb;
+    border: 2px solid #d1d1d1;
 
     // Unstyle the caret on `<select>`s in IE10+.
     &::-ms-expand {
@@ -84,6 +84,13 @@ label {
 	opacity: 1;
     }
 
+}
+
+hr{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid #d1d1d1;
 }
 
 input[type="date"],

@@ -35,6 +35,23 @@
 .site-footer{
     padding: rem(22px 0);
     text-align: center;
+    font-size: 12px;
+    ul{
+	list-style: none;
+	padding: 0;
+	li{
+	    display: inline-block;
+	}
+	li+li{
+	    margin-left: 30px;
+	}
+    }
+    a{
+	text-decoration: underline;
+    }
+    .offer{
+	margin: 20px 0;
+    }
 }
 /**/
 /* Style the form */
@@ -109,5 +126,19 @@ select.form-control {
 	left: 0;
 	bottom: 0;
 	transform: translate(-100%,48%);
+    }
+}
+.info-wrp{
+    .box{
+	display: flex;
+
+    }
+    .icon{
+	flex: 0 0 50px;
+	margin-right: 20px;
+	color: $blue;
+    }
+    h4{
+	margin-bottom: .5rem;
     }
 }
