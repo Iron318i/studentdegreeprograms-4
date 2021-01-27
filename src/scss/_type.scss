@@ -29,23 +29,22 @@ h6, .h6 { font-size:$h6-font-size; }
 .btn{
     display: inline-block;
     font-weight: 400;
-    font-size: rem(33px);
-    padding: rem(2px 30px);
+    font-size: rem(24px);
+    padding: rem(7px 30px);
     text-align: center;
-    min-width: rem(150px);
     border-radius: 5px;
     box-shadow: none;
-    border: 5px solid transparent;
-    border-radius: 30px;
+    border: 0 none;
+    border-radius: 5px;
 }
 .btn-primary{
-    background-color: rgba(25,118,207,1);;
-    border-color: #F4A817;
+    background: linear-gradient(#FFA51F, #E08700);
+    box-shadow: inset 0px 1px 0px #ffc36b, inset 0 -1px 2px #ad6800;
+    text-shadow: 1px 1px #551f00;
     color: #fff;
-    @include hover-focus(){
-	background-color:  rgba(19,101,197,1);
-	border-color: #F4A817;
-	color: #fff;
+    &:hover{
+	background: linear-gradient(#E08700, #FFA51F);
+	box-shadow: none;
     }
 }
 label {

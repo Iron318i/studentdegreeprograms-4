@@ -29,6 +29,12 @@
     .content-section {
 	padding: 3rem 0;
     }
+    #regForm {
+	padding: 70px 50px;
+	.btn{
+	    margin-top: 50px;
+	}
+    }
 }
 @media (min-width: 1280px){
     .container {
@@ -37,4 +43,7 @@
 }
 
 @media (max-width: 767px){
+    .arrow-wrp{
+	display: none!important;
+    }
 }
