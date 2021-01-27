@@ -1,0 +1,40 @@
+$gray-1: #292929;
+$gray-2: #363332;
+$black: #000000;
+
+$blue: #1b86c7;
+$orange: #ff7e00;
+
+$primary: $blue;
+$secondary: $orange;
+
+// Fonts
+$font-family-base: 'Roboto', sans-serif;
+$ff-fs: $font-family-base;
+
+$headings-font-fdamily: $font-family-base;
+$font-size-base: 1rem;
+$font-weight-base: 700;
+$line-height-base: 1.5;
+
+// Typography
+
+$paragraph-margin-bottom: 1rem;
+
+$link-color: $blue;
+$link-hover-color: $orange;
+
+// Headings
+$headings-margin-bottom: 1rem;
+$headings-font-weight: 400;
+$headings-line-height: 1.1;
+
+$h1-font-size: rem(26px); //
+$h2-font-size: rem(26px); //
+$h3-font-size: rem(22px);
+$h4-font-size: rem(20px);
+$h5-font-size: rem(18px);
+$h6-font-size: rem(16px);
+
+// Forms
+$label-margin-bottom: 5px;

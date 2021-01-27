@@ -1,0 +1,97 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+//
+// Headings
+//
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-bottom: $headings-margin-bottom;
+    font-weight: $headings-font-weight;
+    line-height: $headings-line-height;
+    color: $blue;
+    //  font-family: $headings-font-fdamily;
+}
+
+h1, .h1 {
+    font-size:$h1-font-size;
+}
+h2, .h2 {
+    font-size:$h2-font-size;
+}
+h3, .h3 { font-size:$h3-font-size; }
+h4, .h4 { font-size:$h4-font-size; }
+h5, .h5 { font-size:$h5-font-size; }
+h6, .h6 { font-size:$h6-font-size; }
+
+.btn{
+    display: inline-block;
+    font-weight: 400;
+    font-size: rem(33px);
+    padding: rem(2px 30px);
+    text-align: center;
+    min-width: rem(150px);
+    border-radius: 5px;
+    box-shadow: none;
+    border: 5px solid transparent;
+    border-radius: 30px;
+}
+.btn-primary{
+    background-color: rgba(25,118,207,1);;
+    border-color: #F4A817;
+    color: #fff;
+    @include hover-focus(){
+	background-color:  rgba(19,101,197,1);
+	border-color: #F4A817;
+	color: #fff;
+    }
+}
+label {
+    // Allow labels to use `margin` for spacing.
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form-group {
+    margin-bottom: 1.5rem;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: rem(49px);
+    padding: rem(10px 16px);
+    color: $black;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #bbbbbb;
+
+    // Unstyle the caret on `<select>`s in IE10+.
+    &::-ms-expand {
+	background-color: transparent;
+	border: 0;
+    }
+
+    // Remove select outline from select box in FF
+    &:-moz-focusring {
+	color: transparent;
+	text-shadow: 0 0 0 $black;
+    }
+
+    // Placeholder
+    &::placeholder {
+	color: $gray-1;
+	// Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526.
+	opacity: 1;
+    }
+
+}
+
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"] {
+    &.form-control {
+	appearance: none; // Fix appearance for date inputs in Safari
+    }
+}
